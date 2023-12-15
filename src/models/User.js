@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"; //projectname in mongodb--next-auth
 
 const { Schema } = mongoose;
 
@@ -29,6 +29,8 @@ const userSchema = new Schema(
       type: Date,
       required: false,
     },
+    verifyToken: String,
+    verifyTokenExpiry: Date,
   },
   { timestamps: true }
 );

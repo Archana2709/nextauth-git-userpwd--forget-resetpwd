@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose";//projectname in mongodb--next-auth ,DBname-AuthMongoNext,tablename-users
 
 const connect = async () => {
   if (mongoose.connections[0].readyState) return;
